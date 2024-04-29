@@ -22,7 +22,7 @@ class Lecteur {
          * @param modeAuto indique si l'affichage doit se faire automatiquement
          * @param estCharge indique si l'affichage est en cours de chargement d'une diapositive
          */
-        Lecteur::Lecteur(Diaporama diapoCharge, bool modeAuto = false, bool estCharge = true);
+        Lecteur(Diaporama diapoCharge, bool modeAuto = false, bool estCharge = true);
 
         /**
         * @brief Destructeur de l'objet Lecteur
