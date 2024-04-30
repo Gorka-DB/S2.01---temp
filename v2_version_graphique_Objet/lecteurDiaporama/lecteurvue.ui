@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1501</width>
-    <height>886</height>
+    <width>1160</width>
+    <height>648</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
      <rect>
       <x>20</x>
       <y>10</y>
-      <width>1121</width>
+      <width>1131</width>
       <height>591</height>
      </rect>
     </property>
@@ -66,16 +66,19 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QPushButton" name="pushButton_2">
+        <widget class="QPushButton" name="btnPrecedent">
          <property name="text">
           <string>Précédent</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton">
+        <widget class="QPushButton" name="btnSuivant">
          <property name="text">
           <string>Suivant</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
@@ -84,18 +87,44 @@
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout_2">
        <item>
-        <widget class="QPushButton" name="pushButton_3">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="btnLancer">
          <property name="text">
           <string>Lancer diaporama</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="pushButton_4">
+        <widget class="QPushButton" name="btnArreter">
          <property name="text">
           <string>Arreter diaporama</string>
          </property>
         </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
        </item>
       </layout>
      </item>
@@ -107,11 +136,11 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1501</width>
+     <width>1160</width>
      <height>22</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuParam_tres">
+   <widget class="QMenu" name="menuParametres">
     <property name="title">
      <string>Paramètres</string>
     </property>
@@ -133,7 +162,7 @@
     <addaction name="actionA_propos_de"/>
    </widget>
    <addaction name="menuFichier"/>
-   <addaction name="menuParam_tres"/>
+   <addaction name="menuParametres"/>
    <addaction name="menuAide"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
